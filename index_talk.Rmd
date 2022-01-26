@@ -3,10 +3,8 @@ title: "Budnicki Discharge Data Example"
 author: "Brandon Budnicki"
 date: "Created 1/24/2022 Last compiled on `r format(Sys.time(), '%m/%d/%y')`"
 output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 3
+  revealjs::revealjs_presentation:
+    incremental: true
     
 ---
 
@@ -113,7 +111,7 @@ don't plagiarize.
 
 - [x] 8. **Bonus** Make the timestamp in the header dynamic. As in it only adds todays date, not just a static date you enter. 
 
-- [X] 9. **Bonus** Create an "index_talk.Rmd" version of your document using the`revealjs` package. [Add link to your original report-style document](index_talk.html). 
+- [ ] 9. **Bonus** Create an "index_talk.Rmd" version of your document using the`revealjs` package. Add link to your original report-style document. 
 
 ## DyGraph example. 
 ```{r}
@@ -133,4 +131,4 @@ dygraph(series, main = "Discharge in the Poudre River, Fort Collins (Figure 1)")
 *Burn scars* caused by the [Cameron peak fire](https://en.wikipedia.org/wiki/Cameron_Peak_Fire) lead to dangerous discharge within the Poudre River. On July 21st 2021 **(Label A Figure 1)**. Larimer County officials [closed the Poudre River](https://www.larimer.org/poudre-canyon-flooding) for all use and issued evacuation orders, finally reopening on July 22nd **(Label B Figure 1)**. These flood warnings were issued and then lifted before the *peak discharge* from this rainfall event on July 24th **(Label C Figure 1)**.
 
 ## Reveal Js Presentation
-To view a presentation of this material [click here](index_talk.html).
+To view a documentation for this material [click here](index.html).
